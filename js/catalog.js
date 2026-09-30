@@ -37,7 +37,16 @@ window.NEON_BREW_CATALOG = Object.freeze({
   upgrades: [
     {id:'machine',icon:'▤',name:'Máy pha Ion-X',description:'Tăng tiền thưởng đơn hàng +15%.',base:75,effect:'machine'},
     {id:'sign',icon:'▱',name:'Bảng hiệu Neon',description:'Khách hào phóng hơn, thêm +10% tiền.',base:110,effect:'sign'},
-    {id:'grinder',icon:'⚙',name:'Máy xay Lượng Tử',description:'Rút ngắn thời gian pha, tăng thu nhập robot.',base:145,effect:'grinder'}
+    {id:'grinder',icon:'⚙',name:'Máy xay Lượng Tử',description:'Rút ngắn thời gian pha, tăng thu nhập robot.',base:145,effect:'grinder'},
+    {id:'robotCore',icon:'◉',name:'Lõi Robot R-08',description:'Tăng thu nhập tự động thêm 25%.',base:190,effect:'robotCore',oneTime:true},
+    {id:'premiumBeans',icon:'✦',name:'Hạt Cà Phê Quang Tử',description:'Tăng giá trị mọi món thêm 10%.',base:230,effect:'premiumBeans',oneTime:true},
+    {id:'tipJar',icon:'◇',name:'Hũ Tiền Tip Thông Minh',description:'Đơn chính xác nhận thêm 10% tiền.',base:275,effect:'tipJar',oneTime:true},
+    {id:'labScanner',icon:'⌕',name:'Máy Quét Phổ Công Thức',description:'Tăng cơ hội nghiên cứu thành công 10 điểm phần trăm.',base:320,effect:'labScanner',oneTime:true},
+    {id:'vipBeacon',icon:'⌁',name:'Beacon Khách VIP',description:'Tăng cơ hội đón khách VIP 10 điểm phần trăm.',base:370,effect:'vipBeacon',oneTime:true},
+    {id:'securityGrid',icon:'▦',name:'Lưới An Ninh Neon',description:'Sự cố khu phố xuất hiện thưa hơn 30 giây.',base:420,effect:'securityGrid',oneTime:true},
+    {id:'branchNet',icon:'⌘',name:'Mạng Điều Phối Chi Nhánh',description:'Tăng thu nhập robot thêm 20%.',base:490,effect:'branchNet',oneTime:true},
+    {id:'loyaltyCard',icon:'♡',name:'Thẻ Thành Viên',description:'Pha đúng đơn nhận thêm 1 danh tiếng.',base:560,effect:'loyaltyCard',oneTime:true},
+    {id:'deliveryFleet',icon:'➤',name:'Trạm Sạc Drone',description:'Tăng thu nhập giao hàng thêm 20%.',base:640,effect:'deliveryFleet',oneTime:true}
   ],
   storyEvents: {
     ransomware:{title:'Robot bị nhiễm Ransomware',copy:'☠ Màn hình hiện đầu lâu. Hacker khóa firmware barista và đòi 10% quỹ bằng Bitcoin / Credits.'},

@@ -7,6 +7,7 @@
 <title>NEON BREW — Tiệm cà phê tương lai</title>
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/cyber-events.css">
+<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 <section class="intro-screen" id="introScreen" aria-labelledby="introTitle">
@@ -61,7 +62,7 @@
       <section class="feature-panel"><div class="panel-heading"><h2>Phối nguyên liệu</h2><span class="mono">3 Ô · 1 LẦN THỬ</span></div><div class="feature-body"><div class="ingredient-selects"><label><span class="field-label">NGUYÊN LIỆU 01</span><select id="ingredientA"></select></label><label><span class="field-label">NGUYÊN LIỆU 02</span><select id="ingredientB"></select></label><label><span class="field-label">NGUYÊN LIỆU 03</span><select id="ingredientC"></select></label></div><div class="research-result" id="researchResult" aria-live="polite">Chọn ba nguyên liệu còn hàng rồi bắt đầu thử nghiệm.</div><button class="action-btn primary" id="researchButton">BẮT ĐẦU THỬ · ¢18</button></div></section>
       <section class="feature-panel"><div class="panel-heading"><h2>Kho nguyên liệu</h2><span class="mono">MUA THÊM</span></div><div class="feature-body"><div class="stock-grid" id="ingredientStock"></div></div></section>
       <section class="feature-panel"><div class="panel-heading"><h2>Sổ công thức đã mở</h2><span class="mono" id="formulaCount">0 CÔNG THỨC</span></div><div class="feature-body"><div class="formula-list" id="formulaList"></div></div></section>
-      <section class="feature-panel"><div class="panel-heading"><h2>Chất lượng mẻ pha</h2><span class="mono">RỦI RO / CƠ HỘI</span></div><div class="feature-body"><div class="formula-entry"><span>☣ Thất bại<small>Tạo rác thải Cyber</small></span><b class="tag-chip">35%</b></div><div class="formula-entry"><span>✦ Thành công<small>Mở công thức mới</small></span><b class="tag-chip">65%</b></div><div class="formula-entry"><span>✧ Huyền thoại<small>Đồ uống có giá trị bán x5</small></span><b class="tag-chip">8%*</b></div><p class="tipline">* Cơ hội huyền thoại nằm trong lần thử thành công. Uy tín Hacker tăng tỉ lệ thành công.</p></div></section>
+      <section class="feature-panel"><div class="panel-heading"><h2>Chất lượng mẻ pha</h2><span class="mono">RỦI RO / CƠ HỘI</span></div><div class="feature-body"><div class="formula-entry"><span>☣ Thất bại<small>Tổng lần thất bại</small></span><b class="tag-chip" id="researchFailureCount">0</b></div><div class="formula-entry"><span>✦ Thành công<small>Tổng lần thành công, kể cả công thức trùng</small></span><b class="tag-chip" id="researchSuccessCount">0</b></div><div class="formula-entry"><span>✧ Thử nghiệm<small>Tổng số lần nghiên cứu</small></span><b class="tag-chip" id="researchTrialCount">0</b></div><div class="progress-meter"><i id="researchProgressMeter"></i></div><p class="tipline" id="researchProgressText">Mốc tiếp theo sau 5 lần thử. Công thức huyền thoại có 8% cơ hội trong lần thành công.</p></div></section>
     </div>
   </section>
   <section class="view-page" id="view-city" role="tabpanel" aria-label="Thành phố và phe phái">
